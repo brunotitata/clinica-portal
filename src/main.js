@@ -16,8 +16,11 @@ import Notifications from "./components/NotificationPlugin";
 import MaterialDashboard from "./material-dashboard";
 
 import Chartist from "chartist";
-
-import CheckboxRadio from 'vue-checkbox-radio';
+import ToggleButton from 'vue-js-toggle-button';
+import BootstrapVue from 'bootstrap-vue';
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+import VueGoodWizard from 'vue-good-wizard';
 
 // configure router
 const router = new VueRouter({
@@ -32,7 +35,9 @@ Vue.use(MaterialDashboard);
 Vue.use(GlobalComponents);
 Vue.use(GlobalDirectives);
 Vue.use(Notifications);
-Vue.use(CheckboxRadio);
+Vue.use(ToggleButton);
+Vue.use(BootstrapVue);
+Vue.use(VueGoodWizard);
 
 /* eslint-disable no-new */
 new Vue({

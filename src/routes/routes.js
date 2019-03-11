@@ -1,8 +1,8 @@
 import DashboardLayout from "@/pages/Layout/DashboardLayout.vue";
 
 import Dashboard from "@/pages/Dashboard.vue";
-import UserProfile from "@/pages/UserProfile.vue";
 import TableList from "@/pages/TableList.vue";
+import CadastrarPaciente from "@/pages/cadastrar-paciente.vue";
 
 const routes = [
   {
@@ -16,14 +16,14 @@ const routes = [
         component: Dashboard
       },
       {
-        path: "cadastrar-paciente",
-        name: "",
-        component: UserProfile
-      },
-      {
         path: "pacientes",
         name: "Pacientes",
         component: TableList
+      },
+      {
+        path: "cadastrar-paciente",
+        name: "",
+        component: CadastrarPaciente
       }
     ]
   }
